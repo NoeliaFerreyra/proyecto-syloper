@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Item } from 'src/app/Interfaces/books.interfaces';
 
 @Component({
   selector: 'app-lista-libros',
@@ -7,5 +8,9 @@ import { Component } from '@angular/core';
   ]
 })
 export class ListaLibrosComponent {
+
+  @Input()
+
+  public books: Item[] =[];
 
 }

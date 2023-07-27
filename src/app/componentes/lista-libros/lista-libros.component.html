@@ -1,16 +1,27 @@
 <div class="row">
-  <div class="col-md-3 col-sm-6 mt-2 ">
+
+  <div *ngFor="let item of books" class="col-md-3 col-sm-6 mt-2 ">
+    <a href= "https://books.google.com/" target="_blank">
     <div class="card mb-2 text-center bg-dark ">
 
-      <!-- todo: crear imagen -->
+      <img [src]="item.volumeInfo.imageLinks.smallThumbnail"
+           [alt]="item.volumeInfo.authors"
+           class="card-img-top"
+           >
+
 
       <div class="card-body text-white">
         <p class="card-text">
-          Hola mundo
+          {{item.volumeInfo.title}}
         </p>
-      </div>
+        <hr class="text-white">
+        <p class="card-text">
+          {{item.volumeInfo.authors}}
+        </p>
 
+      </div>
     </div>
+  </a>
   </div>
 
 </div>

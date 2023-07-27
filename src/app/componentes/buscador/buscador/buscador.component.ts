@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+
+
+import { Component, ElementRef, ViewChild } from '@angular/core';
+import { BooksService } from '../../../servicios/books.service';
+
 
 @Component({
   selector: 'app-buscador',
@@ -7,12 +11,31 @@ import { Component } from '@angular/core';
   <input type="text"
   class="form-control"
   placeholder="Escribe el nombre del libro..."
+  (keyup.enter)="searchTag()"
+  #txtTagInput
   >
-
   `,
 
 })
 export class BuscadorComponent {
-  constructor() {}
 
+@ViewChild('txtTagInput')
+
+  public tagInput!: ElementRef<HTMLInputElement>;
+
+
+
+  constructor( private BooksService: BooksService) {}
+
+
+
+  searchTag(){
+    const newTag = this.tagInput.nativeElement.value
+
+    this.BooksService.searchTag(newTag);
+
+    this.tagInput.nativeElement.value = '';
+
+
+  }
 }

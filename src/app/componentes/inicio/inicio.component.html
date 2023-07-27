@@ -1,18 +1,22 @@
 
-<div class="container row p-3 mt-5">
-  <div class="card col-2  m-4 p-2" >
-    <img src="/assets/imagenes/books-5615562_1280.jpg"class="card-img-top" alt="...">
+<div class="container row p-3 mt-3">
+  <div class="card libro-mes col-4 col-sm-12 bg-dark" >
+    <img src="https://books.google.com/books/content?id=TXiMDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"class="card-img-top" alt="...">
       <div class="card-body text-center">
-        <h5 class="card-title">Libro del Mes</h5>
-        <p class="card-text "> <strong>Agosto</strong> </p>
-        <a href="#" class="btn btn-secondary">Ver</a>
+        <h5 class="card-title text-white">Libro del Mes</h5>
+
+            <p class="card-text text-white">
+                      <strong>Hábitos Atómicos</strong>
+            </p>
+
+        <a href="https://www.cuspide.com/Libro/9789878220062/Habitos+Atomicos" class="btn btn-secondary" target="_blank">Comprar</a>
       </div>
 
   </div>
 
       <div class="col-8 flex-fill">
         <app-buscador></app-buscador>
-        <app-lista-libros class="text-center mt-2"></app-lista-libros>
+        <app-lista-libros [books]= "books" class="text-center mt-2"></app-lista-libros>
       </div>
 </div>
 

@@ -1,6 +1,7 @@
 .container{
   background-image: url('/assets/imagenes/trnava-university-BEEyeib-am8-unsplash.jpg')  ;
   background-size: cover;
+  width: 102%;
 
 
 }
@@ -16,5 +17,10 @@
 
 img{
   margin-top: 3px;
+}
+
+.libro-mes{
+  width: 12rem;
+  max-height: 400px;
 }
 

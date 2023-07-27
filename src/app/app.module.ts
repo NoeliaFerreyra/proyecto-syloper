@@ -10,6 +10,8 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { BuscadorComponent } from './componentes/buscador/buscador/buscador.component';
 import { ListaLibrosComponent } from './componentes/lista-libros/lista-libros.component';
+import { QuienesComponent } from './componentes/nosotros/quienes/quienes.component';
+import { PreguntasComponent } from './componentes/nosotros/preguntas/preguntas.component';
 
 
 
@@ -25,6 +27,8 @@ import { ListaLibrosComponent } from './componentes/lista-libros/lista-libros.co
     InicioComponent,
     BuscadorComponent,
     ListaLibrosComponent,
+    QuienesComponent,
+    PreguntasComponent,
 
 
 

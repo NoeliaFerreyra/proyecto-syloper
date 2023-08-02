@@ -2,7 +2,7 @@
 
   <div *ngFor="let item of books" class="col-md-3 col-sm-6 mt-2 ">
     <a href= "https://books.google.com/" target="_blank">
-    <div class="card mb-2 text-center bg-dark ">
+    <div class="card mb-2 text-center bg-dark target ">
 
       <img [src]="item.volumeInfo.imageLinks.smallThumbnail"
            [alt]="item.volumeInfo.authors"
@@ -14,7 +14,7 @@
         <p class="card-text">
           {{item.volumeInfo.title}}
         </p>
-        <hr class="text-white">
+        <hr class="text-white ">
         <p class="card-text">
           {{item.volumeInfo.authors}}
         </p>

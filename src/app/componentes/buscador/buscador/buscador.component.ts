@@ -30,6 +30,7 @@ export class BuscadorComponent {
 
 
   searchTag(){
+
     const newTag = this.tagInput.nativeElement.value
 
     this.BooksService.searchTag(newTag);

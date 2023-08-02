@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +12,10 @@ import { BuscadorComponent } from './componentes/buscador/buscador/buscador.comp
 import { ListaLibrosComponent } from './componentes/lista-libros/lista-libros.component';
 import { QuienesComponent } from './componentes/nosotros/quienes/quienes.component';
 import { PreguntasComponent } from './componentes/nosotros/preguntas/preguntas.component';
+import { RecomendadosComponent } from './componentes/footer/recomendados/recomendados.component';
+import { FormularioInscripcionComponent } from './componentes/formulario-inscripcion/formulario-inscripcion.component';
+
+
 
 
 
@@ -29,6 +33,10 @@ import { PreguntasComponent } from './componentes/nosotros/preguntas/preguntas.c
     ListaLibrosComponent,
     QuienesComponent,
     PreguntasComponent,
+    RecomendadosComponent,
+    FormularioInscripcionComponent,
+
+
 
 
 
@@ -39,6 +47,7 @@ import { PreguntasComponent } from './componentes/nosotros/preguntas/preguntas.c
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

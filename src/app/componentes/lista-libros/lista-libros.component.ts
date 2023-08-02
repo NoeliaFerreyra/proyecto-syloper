@@ -4,8 +4,7 @@ import { Item } from 'src/app/Interfaces/books.interfaces';
 @Component({
   selector: 'app-lista-libros',
   templateUrl: './lista-libros.component.html',
-  styles: [
-  ]
+  styleUrls: ['./lista-libros.component.scss']
 })
 export class ListaLibrosComponent {
 

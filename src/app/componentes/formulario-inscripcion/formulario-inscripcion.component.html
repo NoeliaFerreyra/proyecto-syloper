@@ -1,0 +1,55 @@
+<div class="container mt-5">
+  <h1>Formulario de Inscripción - Club de Lectura</h1>
+  <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" formControlName="nombre" class="form-control">
+      <div *ngIf="formulario.get('nombre')?.invalid && formulario.get('nombre')?.touched" class="text-danger">
+        El nombre es obligatorio.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" formControlName="email" class="form-control">
+      <div *ngIf="formulario.get('email')?.invalid && formulario.get('email')?.touched" class="text-danger">
+        Ingresa un correo electrónico válido.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="telefono">Teléfono de contacto:</label>
+      <input type="tel" id="telefono" formControlName="telefono" class="form-control">
+      <div *ngIf="formulario.get('telefono')?.invalid && formulario.get('telefono')?.touched" class="text-danger">
+        El teléfono es obligatorio.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="genero">Género literario favorito:</label>
+      <select id="genero" formControlName="genero" class="form-control">
+        <option value="">Selecciona un género</option>
+        <option value="Ficción">Ficción</option>
+        <option value="No Ficción">No Ficción</option>
+        <option value="Poesía">Poesía</option>
+        <option value="Drama">Drama</option>
+        <option value="Misterio">Misterio</option>
+
+      </select>
+      <div *ngIf="formulario.get('genero')?.invalid && formulario.get('genero')?.touched" class="text-danger">
+        Debes seleccionar un género.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="motivacion">Motivación para unirte al club:</label>
+      <textarea id="motivacion" formControlName="motivacion" rows="4" class="form-control"></textarea>
+      <div *ngIf="formulario.get('motivacion')?.invalid && formulario.get('motivacion')?.touched" class="text-danger">
+        La motivación es obligatoria.
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enviar inscripción</button>
+  </form>
+</div>
+

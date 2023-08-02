@@ -1,3 +1,11 @@
+# Proyecto final para el curso de frontend dictado por Syloper.
+Participante: Noelia Ferreyra
+Nombre del proyecto: Luna en Libro (club de lectura)
+Descripción: Página web desarrollada en Angular, con varias secciones estáticas y un buscador de libros interactivo en la sección inicial.
+Se utilizó Boostrap para la mayoría de los estilos y este es el resultado final de mi primer proyecto completo. 
+Obviamente falta mucho por mejorar, pero realmente estoy muy conforme con todo lo aprendido hasta el momento y estoy segura de que en mi próximo trabajo lo voy a hacer muchísimo mejor. 
+
+
 # LunaEnLibro
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
